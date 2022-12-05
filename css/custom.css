@@ -1,0 +1,174 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800,700,300,300italic,600,400italic,600italic,700italic,800italic);
+
+html {
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--background);
+  transition: background-color 200ms linear;
+}
+
+nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+nav .nav-button {
+  margin-right: 20px;
+}
+
+nav .button:last-child {
+  margin-right: 20px;
+}
+
+a {
+  color: #788BFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #5C72FF;
+  text-decoration: underline;  
+}
+
+footer {
+  margin-bottom: 25px !important;
+}
+
+.center {
+  text-align: center; 
+}
+
+.right {
+  float: right; 
+}
+
+.button.button-primary {
+  background: var(--button-primary-background);
+  border: var(--button-primary-background-border);
+}
+
+.button.button-primary:focus {
+  background: #5C72FF;
+  border: #4760FF;
+}
+
+.button.button-primary:hover {
+    background: #4760FF;
+    border: #4760FF;
+}
+
+.button.button-custom {
+  background: var(--button-background);
+  border: 1px solid var(--button-background-border);
+}
+
+.list-without-type {
+  list-style-type: none;
+}
+
+:root {
+  --background: #FFF;
+  --text-color: #333;
+  --button-primary-background: #5C72FF;
+  --button-primary-background-border: #4760FF;
+  --button-primary-hover: #4760FF;
+  --button-background-border: #BBB;
+
+  --inverse-text-color: #FFF;
+  --inverse-background: #333;
+
+  --background-code-block: #2d2d2d;
+}
+
+[data-theme="dark"]  {
+  --background: #000;
+  --text-color: #FFF;
+  --button-background: #FFF;
+  --button-color: #000;
+  --button-background-border: #000;
+
+  --inverse-text-color: #333;
+  --inverse-background: #FFF;
+
+  --background-code-block: #000;
+}
+
+.code-block {
+  display: block;
+  white-space: pre-wrap;
+}
+.highlighter {
+  color: var(--inverse-text-color);
+  background: var(--inverse-background);
+}
+
+.container {
+  max-width: 800px;
+}
+
+.blog-resume-card {
+  border: 1px solid #bebebe;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.blog-resume-card-date {
+  font-size: 2rem;
+}
+
+.blog-image {
+  background-color: white;
+}
+
+.blog-image-long {
+  border-radius: 10px;
+  width: 350px;
+}
+
+.blog-image-high {
+  border-radius: 10px;
+  width: 250px;
+}
+
+@media (min-width: 400px) {
+  .container {
+    width: 90% !important;
+  } 
+
+}
+
+@media (max-width: 400px) {
+  .container {
+    width: 100% !important;
+  } 
+
+  img {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 250px) {
+  .container {
+    width: 100% !important;
+  } 
+
+  img {
+    width: 75px !important;
+  }
+}
+
+code {
+  border: 0;
+}
+
+:not(pre)>code[class*=language-], pre[class*=language-] {
+  background: var(--background-code-block) !important;
+}
+
+.code-description {
+  margin-bottom: 0 !important;
+}
